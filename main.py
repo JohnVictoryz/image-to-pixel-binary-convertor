@@ -4,7 +4,8 @@ file = input("Enter image filename with extension:")
 image = Image.open(file)
 pixels = image.load()
 
-out_file = open("output.bin", "wb")
+filename = input("Enter binary filename:")
+out_file = open(filename + ".bin", "wb")
 
 vertical = input("Enter vertical pixel amount:")
 horizontal = input("Enter horizontal pixel amount:")
